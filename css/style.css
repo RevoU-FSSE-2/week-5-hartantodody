@@ -14,6 +14,10 @@
     font-family: mark pro;
 }
 
+html{
+    scroll-behavior: smooth;    
+}
+
 .i{
     font-style: italic;
 }
@@ -24,7 +28,6 @@
     color: black;
     font-size: 1rem;
 }
-
 
 /* navigation bar */
 header{
@@ -50,6 +53,7 @@ header .logo svg{
     height: 32px;
     width: 95px;
     margin: 0 0 0 20px;
+    fill: white;
 }
 
 header .logo svg:hover{
@@ -65,7 +69,7 @@ header .left-menu nav{
     display: none;
 }
 
-header .left-menu nav .drop-button, a{
+header .left-menu nav .drop-button, nav a{
     border: none;
     outline: none;
     background-color: inherit;
@@ -74,16 +78,19 @@ header .left-menu nav .drop-button, a{
     border-radius: 5px;
 }
 
-header .left-menu nav .drop-button:hover, a:hover{
+header .left-menu nav .drop-button:hover, nav a:hover{
     background-color: #323232;
     padding: 5px 15px;
     color: white;
 }
 
 header .left-menu nav .dropdown-content{
-    display: none;
+    display: block;
     position: absolute;
-    background-color: inherit;
+    margin-top: 10px;
+    background-color: #323232;
+    border-top: solid 5px rgb(208, 48, 48);
+    border-radius: 5px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -91,12 +98,16 @@ header .left-menu nav .dropdown-content{
 
 header .left-menu nav .dropdown-content a {
     float: none;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
+
+.show {
+    display: block;
+  }
 
 /* right navigation menu */
 header .right-menu{
@@ -165,6 +176,11 @@ main .about-us{
     gap: 20px;
 }
 
+
+main .about-us div{
+    padding: 80px 20px;
+}
+
 main .about-us h2, p{
     color: black;
 }
@@ -172,12 +188,12 @@ main .about-us h2, p{
 main .about-us h2{
     font-size: 30px;
     text-align: center;
-    padding: 40px 20px;
+    margin: 20px 0;
 }
 
 main .about-us p{
-    padding: 20px;
     font-size: 16px;
+    margin: 20px 0;
 }
 
 /* OUR VALUES UPPER-SECTION */
@@ -200,6 +216,7 @@ main .our-values h2{
     align-items:last baseline;
     width: 100%;
     height: 108px;
+    cursor: pointer;
 }
 
 main .our-values h3{
@@ -239,28 +256,33 @@ main .our-values .five{
 }
 /* OUR VALUES - LOWER SECTION */
 
+main .our-values2{
+    display: ;
+}
+
 main .our-values2 .content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 40px 20px;
 }
 
 main .our-values2 .content h2{
-    width: 385px;
+    min-width: 385px;
     color: black;
     font-size: 21px;
     font-weight: bold;
 }
 
 main .our-values2 .content p{
-    width: 385px;
+    min-width: 385px;
     color: black;
 }
 
 main .our-values2 .content img{
-    width: 385px;
+    min-width: 385px;
 }
 
 
@@ -275,14 +297,20 @@ footer .inner{
     background-color: #252423;
 }
 
-footer .inner a, p, i {
+footer .inner a, p, i, #topButton {
     color: rgb(149, 149, 149);
     font-weight: bold;
     transition: 100ms text-decoration;
     transition: 250ms color;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
-footer .inner a:hover{
+footer .inner a:hover, .inner #topButton:hover{
     text-decoration: underline;
     color: aliceblue;
 }
@@ -296,6 +324,7 @@ footer .inner .social{
 
 footer .inner .social i{
     font-size: 16px;
+    cursor: pointer;
 }
 
 footer .inner .social i:hover{
@@ -307,6 +336,7 @@ footer .inner hr{
     margin: 20px 0;
     border: solid 1px rgb(80, 80, 80);   
 }
+
 /* @media only screen and (max-width: 768px){
 
 } */
@@ -323,7 +353,7 @@ footer .inner hr{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 7px;
     }
 
 
@@ -370,6 +400,50 @@ footer .inner hr{
     main .about-us p{
         font-size: 17px;
     }
+
+    /* our values lower section */
+   
+    main .our-values2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+    
+    main .our-values2 .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    main .our-values2 .content:nth-child(2){
+        flex-direction: row-reverse;
+    }
+
+    main .our-values2 .content h2{
+        max-width: 500px;
+        color: black;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    
+    main .our-values2 .content p{
+        max-width: 500px;
+        color: black;
+    }
+    
+    main .our-values2 .content img{
+        max-width: 500px;
+    }
+    
+    .swap{
+        flex-direction: row-reverse;
+    }
+
+
 
 }
 
