@@ -19,7 +19,7 @@
 }
 
 .p-url{
-    text-decoration: dashed; /* ini kenapa gamau anjir */
+    text-decoration: underline;
     font-weight: bold;
     color: black;
     font-size: 1rem;
@@ -146,7 +146,7 @@ main .about-us p{
     font-size: 16px;
 }
 
-/* OUR VALUES SECTION */
+/* OUR VALUES UPPER-SECTION */
 main .our-values .wrapper{
     display: flex;
     justify-content: center;
@@ -155,19 +155,26 @@ main .our-values .wrapper{
 }
 
 main .our-values h2{
+    text-align: center;
     font-size: 40px;
     color: black;
-    text-align: center;
 }
 
 .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items:last baseline;
     width: 100%;
     height: 108px;
-    background-color: aqua;
+    background-color: rgb(144, 165, 109);
 }
+
+main .our-values h3{
+    font-size: 16px;
+    text-align: left;
+    padding: 0 0 30px 30px;
+}
+
+/* OUR VALUES - LOWER SECTION */
 
 main .our-values2 .content{
     display: flex;
@@ -195,20 +202,47 @@ main .our-values2 .content img{
 
 
 /* FOOTER */
-footer{
+footer .inner{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 60px 10px;
+    gap: 10px;
+    background-color: #252423;
+}
+
+footer .inner a, p, i {
+    color: rgb(149, 149, 149);
+    font-weight: bold;
+    transition: 100ms text-decoration;
+    transition: 250ms color;
+}
+
+footer .inner a:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+footer .inner .social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 10px;
 }
 
-footer a{
-    color: black;
+footer .inner .social i{
+    font-size: 16px;
 }
 
-footer .line{
- border : 1px black;   
+footer .inner .social i:hover{
+    color:  rgb(208, 48, 48);
+}
+
+footer .inner hr{
+    width: 80%;
+    margin: 20px 0;
+    border: solid 1px rgb(80, 80, 80);   
 }
 /* @media only screen and (max-width: 768px){
 
@@ -275,6 +309,7 @@ footer .line{
     }
 
     header .right-menu .sign-in{
+        display: block;
         margin: 0 20px 0 0;
         padding: 5px 10px;
         color: black;
