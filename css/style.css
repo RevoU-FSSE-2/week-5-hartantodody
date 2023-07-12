@@ -43,7 +43,7 @@ header .left-menu{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 header .logo svg{
@@ -61,8 +61,41 @@ header .icon img{
     height: 45px;;
 }
 
-header nav{
+header .left-menu nav{
     display: none;
+}
+
+header .left-menu nav .drop-button, a{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+header .left-menu nav .drop-button:hover, a:hover{
+    background-color: #323232;
+    padding: 5px 15px;
+    color: white;
+}
+
+header .left-menu nav .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header .left-menu nav .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 /* right navigation menu */
@@ -92,6 +125,7 @@ header .right-menu .hamburger-button{
     border-radius: 12px;
     margin: 0 20px 0 0;
 }
+
 
 /* main section */
 /* hero */
@@ -155,8 +189,9 @@ main .our-values .wrapper{
 }
 
 main .our-values h2{
+    padding: 30px;
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     color: black;
 }
 
@@ -165,7 +200,6 @@ main .our-values h2{
     align-items:last baseline;
     width: 100%;
     height: 108px;
-    background-color: rgb(144, 165, 109);
 }
 
 main .our-values h3{
@@ -174,6 +208,35 @@ main .our-values h3{
     padding: 0 0 30px 30px;
 }
 
+main .our-values .one{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/49044809103-df554484e0-k.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+main .our-values .two{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/riot-games-option-5-3.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+main .our-values .three{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/yw-2500a.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+main .our-values .four{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1199524.jpeg);
+    background-size: cover;
+    background-position: center; 
+}
+
+main .our-values .five{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/scb-6256.jpg);
+    background-size: cover;
+    background-position: center; 
+}
 /* OUR VALUES - LOWER SECTION */
 
 main .our-values2 .content{
@@ -263,40 +326,6 @@ footer .inner hr{
         gap: 40px;
     }
 
-    /* header .left-menu nav li{
-        display: inline-block;
-        cursor: pointer;
-        padding: 10px 15px;
-    }
-
-    header .left-menu nav ul ul{
-        position: absolute;
-        top: 100%;
-    
-        /* display: none; */
-    
-
-    header .left-menu nav ul ul li{
-        display: block;
-    }
-
-    header .left-menu nav li:hover ul{
-        display: block;
-    }
-     
-    header .left-menu nav p:hover{
-        background-color: rgb(46, 46, 46);
-        border: none;
-        border-radius: 10px;
-    }
-
-    header .left-menu nav ul{
-        background-color: black;
-    }
-
-    header .left-menu nav li{
-        display: inline-block;
-    }
 
     /* right menu navbar */
     header .right-menu input{

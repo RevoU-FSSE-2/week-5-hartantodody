@@ -37,28 +37,20 @@
         </a>
 
         <nav>
-            <ul>
-                <li>WHO WE ARE</li>
-                <ul class="who">
-                    <li>
-                        <a href="#">About Riot</a>
-                    </li>
-                    <li>
-                        <a href="#">Diversity & Inclusion</a>
-                    </li>
-                    <li>
-                        <a href="#">Social Impact</a>
-                    </li>
-                </ul>
-                <li>WORK WITH US</li>
-                <ul class="work">
-                    <li>Jobs</li>
-                    <li>Benefit</li>
-                    <li>Offices</li>
-                    <li>Life At Riot</li>
-                </ul>
-                <li>NEWS</li>
-            </ul>
+            <button class="drop-button" onclick="myFunction()">WHO WE ARE <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">About Riot</a>
+                    <a href="#">Diversity & Inclusion</a>
+                    <a href="#">Social Impact</a>
+                </div>
+            <button class="drop-button" onclick="myFunction()">WORK WITH US <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="">Jobs</a>
+                    <a href="">Benefit</a>
+                    <a href="">Offices</a>
+                    <a href="">Life At Riot</a>
+                </div>
+            <a href="">NEWS</a>
         </nav>
         </div>
 
@@ -155,36 +147,41 @@
             <div></div>
         </section>
         
-        <footer>
-            <div class="inner">
-                <a href="">PRESS</a>
-                <a href="">SECURITY</a>
-                <a href="">LEGAL</a>
-                <a href="">LEADERSHIP</a>
-                <a href="">CANDITATE PRIVACY</a>
-                <a href="">TERMS OF SERVICE</a>
-                <a href="">PRIVACY NOTICE</a>
-                <a href="">PLAYER SUPPORT</a>
-                <a href="">E-VERIFY</a>
-                <a href="">ACCESSIBILTY</a>
-                
-                <div class="social">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                </div>
-
-                <hr>
-
-                <a href="#">Cookie Preferences</a>
-                <p>2023 Riot Games, Inc. All Rights Resevered.</p>
-
-                <hr>
-
-                <a href="#">TO THE SURFACE</a>
-            </div>
-        </footer>
+       
     </main>
+
+    <footer>
+        <div class="inner">
+            <a href="">PRESS</a>
+            <a href="">SECURITY</a>
+            <a href="">LEGAL</a>
+            <a href="">LEADERSHIP</a>
+            <a href="">CANDITATE PRIVACY</a>
+            <a href="">TERMS OF SERVICE</a>
+            <a href="">PRIVACY NOTICE</a>
+            <a href="">PLAYER SUPPORT</a>
+            <a href="">E-VERIFY</a>
+            <a href="">ACCESSIBILTY</a>
+            
+            <div class="social">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+
+            <hr>
+
+            <a href="#">Cookie Preferences</a>
+            <p>2023 Riot Games, Inc. All Rights Resevered.</p>
+
+            <hr>
+
+            <button onclick="scrollToTop()" id="topButton">TO THE SURFACE</button>
+        </div>
+    </footer>
+
+    <script src="/asset/js/dropdown.js"></script>
+    <script src="/asset/js/scroll-top.js"></script>
 </body>
 </html>
