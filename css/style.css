@@ -85,7 +85,7 @@ header .left-menu nav .drop-button:hover, nav a:hover{
 }
 
 header .left-menu nav .dropdown-content{
-    display: block;
+    display: none;
     position: absolute;
     margin-top: 10px;
     background-color: #323232;
@@ -197,68 +197,64 @@ main .about-us p{
 }
 
 /* OUR VALUES UPPER-SECTION */
-main .our-values .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    main .our-values .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-main .our-values h2{
-    padding: 30px;
-    text-align: center;
-    font-size: 32px;
-    color: black;
-}
+    main .our-values h2{
+        padding: 30px;
+        text-align: center;
+        font-size: 32px;
+        color: black;
+    }
 
-.container{
-    display: flex;
-    align-items:last baseline;
-    width: 100%;
-    height: 108px;
-    cursor: pointer;
-}
+    .container{
+        display: flex;
+        align-items:last baseline;
+        width: 100%;
+        height: 108px;
+        cursor: pointer;
+    }
 
-main .our-values h3{
-    font-size: 16px;
-    text-align: left;
-    padding: 0 0 30px 30px;
-}
+    main .our-values h3{
+        font-size: 16px;
+        text-align: left;
+        padding: 0 0 30px 30px;
+    }
 
-main .our-values .one{
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/49044809103-df554484e0-k.jpg);
-    background-size: cover;
-    background-position: center; 
-}
+    main .our-values .one{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/49044809103-df554484e0-k.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
 
-main .our-values .two{
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/riot-games-option-5-3.jpg);
-    background-size: cover;
-    background-position: center; 
-}
+    main .our-values .two{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/riot-games-option-5-3.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
 
-main .our-values .three{
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/yw-2500a.jpg);
-    background-size: cover;
-    background-position: center; 
-}
+    main .our-values .three{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/yw-2500a.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
 
-main .our-values .four{
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1199524.jpeg);
-    background-size: cover;
-    background-position: center; 
-}
+    main .our-values .four{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1199524.jpeg);
+        background-size: cover;
+        background-position: center; 
+    }
 
-main .our-values .five{
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/scb-6256.jpg);
-    background-size: cover;
-    background-position: center; 
-}
+    main .our-values .five{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/scb-6256.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
 /* OUR VALUES - LOWER SECTION */
-
-main .our-values2{
-    display: ;
-}
 
 main .our-values2 .content{
     display: flex;
@@ -285,6 +281,13 @@ main .our-values2 .content img{
     min-width: 385px;
 }
 
+main .our-values2 .content button{
+    padding: 5px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: red;
+} 
+
 
 /* FOOTER */
 footer .inner{
@@ -297,7 +300,7 @@ footer .inner{
     background-color: #252423;
 }
 
-footer .inner a, p, i, #topButton {
+footer .inner a, .inner p, .inner i, #topButton {
     color: rgb(149, 149, 149);
     font-weight: bold;
     transition: 100ms text-decoration;
@@ -348,6 +351,7 @@ footer .inner hr{
 
 @media only screen and (min-width: 1024px){
 
+
 /* left menu navbar */
     header .left-menu nav{
         display: flex;
@@ -382,6 +386,8 @@ footer .inner hr{
     }
 
 
+
+    /* MAIN SECTION */
     /* hero */
     main .hero{
         height: 700px;
@@ -395,11 +401,80 @@ footer .inner hr{
 
     main .about-us h2{
         font-weight: bolder;
+        max-width: 873px;
     }
 
-    main .about-us p{
-        font-size: 17px;
+    main .about-us p, .about-us a{
+        font-size: 22px;
+        max-width: 873px;
     }
+
+    /* our values upper section */
+
+    main .our-values .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        min-height: 800px;
+    }
+    
+    main .our-values h2{
+        padding: 30px 0;
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    .container{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        min-height: 800px;
+        height: 108px;
+        cursor: pointer;
+    }
+    
+    main .our-values h3{
+        font-size: 24px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    main .our-values .one{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1600/49044809103-df554484e0-k.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    
+    main .our-values .two{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1600/riot-games-option-5-3.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    
+    main .our-values .three{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1600/yw-2500a.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    
+    main .our-values .four{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1600/1199524.jpeg);
+        background-size: cover;
+        background-position: center; 
+    }
+    
+    main .our-values .five{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1600/scb-6256.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+
+    /* .bg-desktop{
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1600/riot-lax-glhf.png);
+    } */
+
 
     /* our values lower section */
    
@@ -408,7 +483,6 @@ footer .inner hr{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
         padding: 40px 20px;
     }
     
@@ -417,6 +491,10 @@ footer .inner hr{
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        gap: 100px;
+        max-width: 560px;
+        min-width: 250px;
+        padding: 40px;
     }
 
     main .our-values2 .content:nth-child(2){
@@ -428,15 +506,19 @@ footer .inner hr{
         color: black;
         font-size: 21px;
         font-weight: bold;
+        margin: 20px 0;
     }
     
     main .our-values2 .content p{
         max-width: 500px;
         color: black;
+        font-size: 16px;
+        margin: 20px 0;
     }
     
     main .our-values2 .content img{
         max-width: 500px;
+        margin: 20px 0;
     }
     
     .swap{
