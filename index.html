@@ -38,8 +38,8 @@
 
         <nav>
             <div>
-            <button id="myDropdown" class="drop-button" onclick="myDropdown()">WHO WE ARE <i class="fa fa-caret-down"></i></button>
-                <div class="dropdown-content">
+            <button id="drop-button" class="drop-button">WHO WE ARE <i class="fa fa-caret-down"></i></button>
+                <div id="dropdown-content" class="dropdown-content">
                     <a href="#">About Riot</a>
                     <a href="#">Diversity & Inclusion</a>
                     <a href="#">Social Impact</a>
@@ -47,8 +47,8 @@
             </div>
 
             <div>
-            <button id="myDropdown" class="drop-button" onclick="myDropdown()">WORK WITH US <i class="fa fa-caret-down"></i></button>
-                <div class="dropdown-content">
+            <button id="drop-button" class="drop-button">WORK WITH US <i class="fa fa-caret-down"></i></button>
+                <div id="dropdown-content" class="dropdown-content">
                     <a href="">Jobs</a>
                     <a href="">Benefit</a>
                     <a href="">Offices</a>
@@ -136,7 +136,7 @@
                 <div>
                     <h2>Diversity & Inclusion</h2>
                     <p>We’re focused on making Riot a great home for people who love making games and setting a high bar for diversity and inclusion.</p>
-                    <button>Learn More</button>
+                    <button class="button">Learn More</button>
                 </div>    
             </div>
             
@@ -150,7 +150,7 @@
                     <h2>Diversity & Inclusion</h2>
                     <p>We believe that anyone with passion, vision, and perseverance can make a positive impact. As part of that ethos, we also believe that there are ways where we, as a company, can provide long-term value and positive impact to the players, partners, Rioters, and communities we serve.</p>
                     <p>Through corporate social responsibility, we hope to apply our unique resources and strengths to create a positive and lasting impact for all of our stakeholders, players, Rioters, our communities, and our planet.</p> 
-                    <button>Learn More</button>
+                    <button class="button">Learn More</button>
                 </div>    
             
             </div>
@@ -159,15 +159,56 @@
         </section>
 
         <section class="global">
-            <h1>We are global</h1>
+            <h2>We are global</h2>
             <p>Riot Games’ HQ is located in sunny Los Angeles, but we have many more offices around the globe. We’re looking for passionate gamers who are also leaders in their field to help us deliver value to players—no matter where they play.</p>
-            <button>Explore our offices</button>
+            <button class="button">Explore our offices</button>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="slider">
+
+                <div class="slide">
+                    <div class="layer"><h3 class="slide-heading">Mexico City, Mexico (Open Position : 0)</h3></div>
+                    <img src="/asset/content/loc/adobestock-91600450.jpeg" alt>
+                    <!-- <div>
+                        <h2>Mexico City</h2>
+                        <h3>Mexico</h3>
+                        <p>Open Position : 0</p>
+                    </div> -->
+                </div>
+
+                <div class="slide">
+                    <div class="layer"><h3 class="slide-heading">Los Angeles, USA (Open Position : 85)</h3></div>
+                    <img src="/asset/content/loc/lax-adobestock-327094922.png" alt>
+                    <!-- <div>
+                        <h2>Los Angeles</h2>
+                        <h3>USA</h3>
+                        <p>Open Position : 85</p>
+                    </div> -->
+                </div>
+
+                <div class="slide">
+                    <div class="layer"><h3 class="slide-heading">Sydney, Australia (Open Position : 0)</h3></div>
+                    <img src="/asset/content/loc/riot-games-sydney-austrailia-office-page.png" alt>
+                    <!-- <div>
+                        <h2>Sydney</h2>
+                        <h3>Australia</h3>
+                        <p>Open Position : 0</p>
+                    </div> -->
+                </div>
+
+                <div class="slide">
+                    <div class="layer"><h3 class="slide-heading">Shanghai, China (Open Position : 44)</h3></div>
+                    <img src="/asset/content/loc/shanghai-adobestock-300255822.png" alt>
+                    <!-- <div>
+                        <h2>Shanghai</h2>
+                        <h3>China</h3>
+                        <p>Open Position : 44</p>
+                    </div> -->
+                </div>
+
+                <button class="btn btn-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                <button class="btn btn-next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                
+            </div>
         </section>
         
        
@@ -175,17 +216,24 @@
 
     <footer>
         <div class="inner">
-            <a href="">PRESS</a>
-            <a href="">SECURITY</a>
-            <a href="">LEGAL</a>
-            <a href="">LEADERSHIP</a>
-            <a href="">CANDITATE PRIVACY</a>
-            <a href="">TERMS OF SERVICE</a>
-            <a href="">PRIVACY NOTICE</a>
-            <a href="">PLAYER SUPPORT</a>
-            <a href="">E-VERIFY</a>
-            <a href="">ACCESSIBILTY</a>
-            
+
+            <a class="icon" href="">
+                <img src="/asset/logo/riot icon black.png" alt="footer riot games logo svg" />
+            </a>
+
+            <div class="links">
+                <a href="">PRESS</a>
+                <a href="">SECURITY</a>
+                <a href="">LEGAL</a>
+                <a href="">LEADERSHIP</a>
+                <a href="">CANDITATE PRIVACY</a>
+                <a href="">TERMS OF SERVICE</a>
+                <a href="">PRIVACY NOTICE</a>
+                <a href="">PLAYER SUPPORT</a>
+                <a href="">E-VERIFY</a>
+                <a href="">ACCESSIBILTY</a>
+            </div>
+
             <div class="social">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
                 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -206,5 +254,8 @@
 
     <script src="/asset/js/dropdown.js"></script>
     <script src="/asset/js/scroll-top.js"></script>
+    <script src="/asset/js/slider.js"></script>
+    <script src="/asset/js/btn-next.js"></script>
+    <script src="/asset/js/btn-prev.js"></script>
 </body>
 </html>
