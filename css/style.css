@@ -86,10 +86,10 @@ header .left-menu nav .drop-button:hover, nav a:hover{
 }
 
 header .left-menu nav .dropdown-content{
-    /* visibility: hidden;
-    opacity: 0; */
-
     display: none;
+    flex-direction: column;
+    opacity: 1;
+    transform: translateY(0rem);
     position: absolute;
     margin-top: 10px;
     background-color: #323232;
@@ -100,6 +100,7 @@ header .left-menu nav .dropdown-content{
     z-index: 1;
 }
 
+
 header .left-menu nav .dropdown-content a {
     float: left;
     color: rgb(255, 255, 255);
@@ -109,12 +110,13 @@ header .left-menu nav .dropdown-content a {
     text-align: left;
 }
 
-.show {
+header .left-menu nav .dropdown-content a:hover{
+    background-color: #585858;
+}
+
+header .left-menu nav .dropdown-content.show{
     display: flex;
-    flex-direction: column;
-    opacity: 1;
-    transform: translateY(0rem);
-  }
+}
 
 /* right navigation menu */
 header .right-menu{
@@ -136,12 +138,43 @@ header .right-menu .sign-in{
     display: none;
 }
 
-header .right-menu .hamburger-button{
+header .hamburger-button{
     background-color: rgb(56, 56, 56);
     padding: 8px;
     border: none;
     border-radius: 12px;
     margin: 0 20px 0 0;
+    cursor: pointer;
+}
+
+header .hamburger-menu{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 570px;
+    background-color: #323232;
+    border-top: solid 5px rgb(208, 48, 48);
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header .hamburger-menu.show{
+    display: flex;
+}
+
+header .hamburger-menu a{
+    padding: 20px;
+    font-size: 16px;   
+}
+
+header .hamburger-menu .sign-in{
+    background-color: rgb(208, 48, 48);
+    text-align: center;
+    margin: 15px 40px;
+    border-radius: 15px;
 }
 
 
