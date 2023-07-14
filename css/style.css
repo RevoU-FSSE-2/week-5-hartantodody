@@ -26,7 +26,7 @@ html{
     text-decoration: underline;
     font-weight: bold;
     color: black;
-    font-size: 1rem;
+    font-size: inherit;
 }
 
 /* navigation bar */
@@ -86,9 +86,11 @@ header .left-menu nav .drop-button:hover, nav a:hover{
 }
 
 header .left-menu nav .dropdown-content{
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
+    visibility: visible;
+    opacity: 0;
+
+    /* display: flex;
+    flex-direction: column; */
     position: absolute;
     margin-top: 10px;
     background-color: #323232;
@@ -202,63 +204,63 @@ main .about-us p{
 }
 
 /* OUR VALUES UPPER-SECTION */
-    main .our-values .wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+main .our-values .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-    main .our-values h2{
-        padding: 30px;
-        text-align: center;
-        font-size: 32px;
-        color: black;
-    }
+main .our-values h2{
+    padding: 30px;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+}
 
-    .container{
-        display: flex;
-        align-items:last baseline;
-        width: 100%;
-        height: 108px;
-        cursor: pointer;
-    }
+.container{
+    display: flex;
+    align-items:last baseline;
+    width: 100%;
+    height: 108px;
+    cursor: pointer;
+}
 
-    main .our-values h3{
-        font-size: 16px;
-        text-align: left;
-        padding: 0 0 30px 30px;
-    }
+main .our-values h3{
+    font-size: 16px;
+    text-align: left;
+    padding: 0 0 30px 30px;
+}
 
-    main .our-values .one{
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/49044809103-df554484e0-k.jpg);
-        background-size: cover;
-        background-position: center; 
-    }
+main .our-values .one{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/49044809103-df554484e0-k.jpg);
+    background-size: cover;
+    background-position: center; 
+}
 
-    main .our-values .two{
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/riot-games-option-5-3.jpg);
-        background-size: cover;
-        background-position: center; 
-    }
+main .our-values .two{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/riot-games-option-5-3.jpg);
+    background-size: cover;
+    background-position: center; 
+}
 
-    main .our-values .three{
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/yw-2500a.jpg);
-        background-size: cover;
-        background-position: center; 
-    }
+main .our-values .three{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/yw-2500a.jpg);
+    background-size: cover;
+    background-position: center; 
+}
 
-    main .our-values .four{
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1199524.jpeg);
-        background-size: cover;
-        background-position: center; 
-    }
+main .our-values .four{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1199524.jpeg);
+    background-size: cover;
+    background-position: center; 
+}
 
-    main .our-values .five{
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/scb-6256.jpg);
-        background-size: cover;
-        background-position: center; 
-    }
+main .our-values .five{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/scb-6256.jpg);
+    background-size: cover;
+    background-position: center; 
+}
 /* OUR VALUES - LOWER SECTION */
 
 main .our-values2 .content{
@@ -278,12 +280,13 @@ main .our-values2 .content h2{
 }
 
 main .our-values2 .content p{
-    min-width: 385px;
+    max-width: 385px;
     color: black;
+    padding: 20px 0;
 }
 
 main .our-values2 .content img{
-    min-width: 385px;
+    max-width: 385px;
 }
 
 
@@ -452,6 +455,7 @@ footer .inner .links{
     border-radius: 25px;
     background-color: red;
     transition: 400ms background-color;
+    cursor: pointer;
 }
 
 .button:hover{
@@ -468,6 +472,48 @@ footer .inner .links{
     /* main */
     main .slider{
         display: block;
+    }
+
+    main .our-values2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    
+    main .our-values2 .content{
+        display: flex;
+        flex-direction: row;
+        width: 560px;
+    }
+
+    main .our-values2 .content div{
+        min-width: 250px;
+        overflow: hidden;
+    }
+
+    main .our-values2 .content:nth-child(2){
+        flex-direction: row-reverse;
+    }
+
+    main .our-values2 .content h2, .content p{
+        min-width: 250px;
+        margin: 20px 0;
+    }
+   
+    
+    main .our-values2 .content img{
+        width: inherit;
+        margin: 20px 0;
+    }
+    
+    main .our-values2 .content .button{
+        margin: 20px;
+    }
+
+    .swap{
+        flex-direction: row-reverse;
     }
 
 
@@ -614,11 +660,6 @@ footer .inner .links{
         background-position: center; 
     }
 
-    /* .bg-desktop{
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/content/1600/riot-lax-glhf.png);
-    } */
-
-
     /* our values lower section */
    
     main .our-values2{
@@ -644,30 +685,27 @@ footer .inner .links{
         flex-direction: row-reverse;
     }
 
+    main .our-values2 .content div{
+        min-width: 500px;
+    }
+
     main .our-values2 .content h2{
-        max-width: 500px;
-        color: black;
+        min-width: 500px;
         font-size: 21px;
         font-weight: bold;
         margin: 20px 0;
     }
     
     main .our-values2 .content p{
-        max-width: 500px;
-        color: black;
+        min-width: 500px;
         font-size: 16px;
         margin: 20px 0;
     }
     
     main .our-values2 .content img{
-        max-width: 500px;
+        min-width: 500px;
         margin: 20px 0;
     }
-    
-    .swap{
-        flex-direction: row-reverse;
-    }
-
     
 
 }
