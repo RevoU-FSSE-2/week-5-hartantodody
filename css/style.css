@@ -86,11 +86,10 @@ header .left-menu nav .drop-button:hover, nav a:hover{
 }
 
 header .left-menu nav .dropdown-content{
-    visibility: visible;
-    opacity: 0;
+    /* visibility: hidden;
+    opacity: 0; */
 
-    /* display: flex;
-    flex-direction: column; */
+    display: none;
     position: absolute;
     margin-top: 10px;
     background-color: #323232;
@@ -111,7 +110,8 @@ header .left-menu nav .dropdown-content a {
 }
 
 .show {
-    visibility: visible;
+    display: flex;
+    flex-direction: column;
     opacity: 1;
     transform: translateY(0rem);
   }
