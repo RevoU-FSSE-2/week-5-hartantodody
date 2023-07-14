@@ -1,4 +1,3 @@
-
 let curSlide = 0;
 let maxSlide = slides.length - 1;
 const nextSlide = document.querySelector(".btn-next");

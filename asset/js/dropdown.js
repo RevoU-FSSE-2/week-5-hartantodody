@@ -1,5 +1,5 @@
-let dropdownBtn = document.getElementsById("drop-button");
-let dropdownMenu = document.getElementsById("dropdown-content");
+let dropdownBtn = document.getElementsById("drop-button1");
+let dropdownMenu = document.getElementsById("dropdown-content1");
 
 let toggleDropdown = function () {
   dropdownMenu.classList.toggle("show");

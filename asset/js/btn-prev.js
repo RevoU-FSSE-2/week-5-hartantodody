@@ -1,4 +1,3 @@
-
 const prevSlide = document.querySelector(".btn-prev");
 
 prevSlide.addEventListener("click", function () {

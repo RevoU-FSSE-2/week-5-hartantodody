@@ -179,7 +179,9 @@ main .hero p{
 
 main .about-us{
     background-color: rgb(223, 223, 223);
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
