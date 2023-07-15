@@ -158,7 +158,6 @@ header .hamburger-menu{
     border-top: solid 5px rgb(208, 48, 48);
     border-radius: 5px;
     width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -167,7 +166,7 @@ header .hamburger-menu.show{
 }
 
 header .hamburger-menu a{
-    padding: 20px;
+    padding: 20px 0;
     font-size: 16px;   
 }
 
@@ -220,21 +219,21 @@ main .about-us{
 }
 
 
-main .about-us div{
+main .about-us article{
     padding: 80px 20px;
 }
 
-main .about-us h2, p{
+main .about-us article h2, article p{
     color: black;
 }
 
-main .about-us h2{
+main .about-us article h2{
     font-size: 30px;
     text-align: center;
     margin: 20px 0;
 }
 
-main .about-us p{
+main .about-us article p{
     font-size: 16px;
     margin: 20px 0;
 }
