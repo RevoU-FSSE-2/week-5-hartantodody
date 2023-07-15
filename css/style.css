@@ -308,20 +308,20 @@ main .our-values2 .content{
 }
 
 main .our-values2 .content h2{
-    min-width: 385px;
+    width: 325px;
     color: black;
     font-size: 21px;
     font-weight: bold;
 }
 
 main .our-values2 .content p{
-    max-width: 385px;
+    width: 325px;
     color: black;
     padding: 20px 0;
 }
 
 main .our-values2 .content img{
-    max-width: 385px;
+    width: 325px;
 }
 
 
@@ -339,7 +339,7 @@ main .global {
 
 main .global h2{
     font-size: 40px;
-    min-width: 500px;
+    width: 325px;
     text-align: center;
     padding: 40px 0;
 }
@@ -519,22 +519,24 @@ footer .inner .links{
     
     main .our-values2 .content{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 560px;
     }
 
     main .our-values2 .content div{
-        min-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 500px;
         overflow: hidden;
     }
 
-    main .our-values2 .content:nth-child(2){
-        flex-direction: row-reverse;
-    }
 
     main .our-values2 .content h2, .content p{
-        min-width: 250px;
-        margin: 20px 0;
+        width: 500px;
+        margin: 5px 0;
+        text-align: center;
     }
    
     
